@@ -4,11 +4,11 @@
 
 スマホ向けアプリ共通システムのサーバーサイドを担当。
 
-==== 樋口雅拓 / @<href>{https://twitter.com/mahiguch1,@mahiguch1}
+==== 樋口雅拓 / @<href>{https://twitter.com/mahiguch1,@mahiguch1} (@<chap>{higuchi})
 
 グリーグループのアウモ株式会社で、お出かけメディアaumoの開発を担当しています。
 ソフトウェアエンジニアで、カタンとドミニオンとビールが好き。
-好きな筋トレは、ラットプルダウン。
+好きなサウナ施設は、鶯谷のサウナセンター。
 
 ==== 白井暁彦 / @<href>{https://twitter.com/o_ob,@o_ob}
 
