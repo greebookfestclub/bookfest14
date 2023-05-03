@@ -6,3 +6,9 @@
 https://note.com/o_ob/m/mde97459aa5eb
 
 shiraiブランチでiPadのworkingCopyで作業するテスト
+
+
+「窓の杜」というメディアにおいては、WindowsPCをお仕事の効率化やホビーとして楽しむ、という原点に立ち返って楽しめている様子、そしてそこの楽しみ方は自由なんだなという原点が尊いと思いました。
+
+
+https://twitter.com/o_ob/status/1653644014158221312
