@@ -8,12 +8,11 @@
 === 2022年以前
 現在、各種プラットフォームでは課金の一環として定期課金を使えることがあります。また定期課金では定番のサービスとして、初回契約の時だけ無償で契約できるものがあります。サービス提供者は無償期間中のユーザーに対して、ログなどで把握したい、何か他と区別したメッセージを表示したいなどのニーズがあり、プラットフォーム側でも無償期間か否かを把握できるようにしてくれています。
 
-Androidで定期課金を扱う上で、詳細情報を取得するのにサーバーAPIは欠かせません。有効期間や各種ステータスの他、定期課金がどのような状態かを調べるのに使います。今回注目するのはpaymentState値の無償期間の判定です。当初はこちらのAPIを利用していました、便宜上v1 API@<fn>{endofn01}と呼びます。
+Androidで定期課金を扱う上で、詳細情報を取得するのにサーバーAPIは欠かせません。有効期間や各種ステータスの他、定期課金がどのような状態かを調べるのに使います。今回注目するのは無償期間の判定です。2022年以前に使っていたAPI@<fn>{endofn01}ではpaymentState値を使います。
 
 //footnote[endofn01][https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptions?hl=ja]
 
-この値は定期購入の支払い状態を示すもので、0:支払い保留中, 1:支払い受領済み, 2:無料試用サービス、を返します。
-ですので無償期間を調べるにはこのAPIを使えばokでした。
+この値は定期購入の支払い状態を示すものです、ですので無償期間を調べるにはこのAPIを使えばokでした。
 
 ※なお、この値は当初APIにありませんでしたが、2017年に追加されたものです@<fn>{endofn02}。
 //footnote[endofn02][https://developers-jp.googleblog.com/2017/05/track-your-subscriptions-better-with.html]
@@ -28,11 +27,11 @@ Androidの定期課金について、2022年5月のGoogle I/Oにて定期課金�
 //footnote[endofn04][https://developer.android.com/google/play/billing/compatibility?hl=ja]
 //footnote[endofn05][https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptionsv2?hl=en]
 
-なお、Google Play Billing Libraryについてはサポート期間が2年と決まっており、例えば新規アプリなら2023 年 8 月 2 日以降はv5を使う必要があります。
+なお、Google Play Billing Libraryについてはサポート期間が2年と決まっており、例えば新規アプリなら2023年8月2日以降はv5を使う必要があります。
 
 
 == サーバーAPIについて
-サーバー向けのGoogle Play Developer APIについては、大きく分けて定期課金プラン管理用のものと、ユーザーの定期課金情報を取得するものがあります。今回ここで検討するのはユーザーの定期課金情報を取得する方です。具体的にはpurchases.subscriptions.getとpurchases.subscriptionsv2.getについて見ていきます。
+サーバー向けのGoogle Play Developer APIについては、大きく分けて定期課金プラン管理用のものと、ユーザーの定期課金情報を取得するものがあります。今回ここで検討するのはユーザーの定期課金情報を取得する方です。具体的には2022年以前のpurchases.subscriptions.get(v1 APIと呼びます)と、2022年5月登場のpurchases.subscriptionsv2.get(v2 APIと呼びます)について見ていきます。
 v1からv2への変更ではGoogleの新しい定期課金についての機能追加や修正が入っています。v1では定期課金情報に親子関係は無いため単なるkey-valueの塊として全情報が返ってきますが、v2ではある程度構造がある上に情報が追加されています。
 
 さて、ユーザーの定期課金の状態は以下の値から取得できます。
