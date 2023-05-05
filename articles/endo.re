@@ -37,26 +37,14 @@ v1からv2への変更ではGoogleの新しい定期課金についての機能�
 
 さて、ユーザーの定期課金の状態は以下の値から取得できます。
 
-v1 API
-
-//emlist{
-paymentState
-The payment state of the subscription. Possible values are: 0. Payment pending 1. Payment received 2. Free trial 3. Pending deferred upgrade/downgrade
-Not present for canceled, expired subscriptions.
-
-(適当に訳) 定期課金の支払いの状態。
-ステータス : 支払い保留、支払い済み、無料期間、アップグレードもしくはダウングレードの保留
-//}
-
-
-v2 API
-//emlist{
-subscriptionState
-The potential states a subscription can be in, for example whether it is active or canceled. The items within a subscription purchase can either be all auto renewing plans or prepaid plans.
-
-(適当に訳) 定期課金の状態。例えば、有効かキャンセル済みか。
-ステータス : 不明、支払い待ち、有効、一時停止、支払い猶予期間、保留中、キャンセル、有効期限切れ
-//}
+ * v1 API
+ ** paymentState
+ *** (適当に訳) 定期課金の支払いの状態。
+ *** ステータス : 支払い保留、支払い済み、無料期間、アップグレードもしくはダウングレードの保留
+ * v2 API
+ ** subscriptionState
+ *** (適当に訳) 定期課金の状態。例えば、有効かキャンセル済みか。
+ *** ステータス : 不明、支払い待ち、有効、一時停止、支払い猶予期間、保留中、キャンセル、有効期限切れ
 
 == サーバーAPI v2から無償期間が取得できない
 
@@ -77,16 +65,16 @@ The potential states a subscription can be in, for example whether it is active 
 
 これで困ったのでもろもろ確認をしました。最終的には各自問い合わせて頂いた方が良さそうですが、各種資料から読みった内容などをまとめると以下の内容になります。
 
-* クライアントSDKの方は2年で移行が必要だが、APIの移行期間は2年という訳では無い、
-** なのでv1 APIを継続して使用してもしばらくは問題無い
-** つまり、Billing Library 5.0に移行後もpurchases.subscriptionsv1をとりあえずは使う
-* v2 APIで無償期間を取れるようにするかの対応は検討するらしい
+ * クライアントSDKの方は2年で移行が必要だが、APIの移行期間は2年という訳では無い、
+ ** なのでv1 APIを継続して使用してもしばらくは問題無い
+ ** つまり、Billing Library 5.0に移行後もpurchases.subscriptionsv1をとりあえずは使う
+ * v2 APIで無償期間を取れるようにするかの対応は検討するらしい
 
 ただし、v1 APIの利用継続はそれはそれで問題があります。
-* v1 APIは新しい定期課金の概念に合致しないので、旧定期課金仕様と互換性のある定期課金のみが実施できる状態になる
-** google play console的には「下位互換性」と表記されている状態にする必要があります
-** それぞれの定期購入に対して基本プランと特典がそれぞれ1つだけの状態にする必要があります
-* v1 APIには無償期間かつ支払猶予期間が表現されていないので取得できない問題があるが、それが継続する
+ * v1 APIは新しい定期課金の概念に合致しないので、旧定期課金仕様と互換性のある定期課金のみが実施できる状態になる
+ ** google play console的には「下位互換性」と表記されている状態にする必要があります
+ ** それぞれの定期購入に対して基本プランと特典がそれぞれ1つだけの状態にする必要があります
+ * v1 APIには無償期間かつ支払猶予期間が表現されていないので取得できない問題があるが、それが継続する
 
 また、代替案としてはおそらくofferTagsを使う方法があるようです。無償期間はofferのいくつかの種類のうち1つになるので、ここに無償期間の情報が入ってくる、それを取得する方法です。複数のofferを設定する場合などは、v2 APIを使った上でこの値を参照することになると思われます。ただ、細かい挙動がドキュメントに書いていないため、まだ十分な知見は無いようです@<fn>{endofn07}。
 //footnote[endofn07][https://developers.google.com/android-publisher/api-ref/rest/v3/purchases.subscriptionsv2#offerdetails]
