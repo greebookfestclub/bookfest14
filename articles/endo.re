@@ -56,7 +56,7 @@ The potential states a subscription can be in, for example whether it is active 
 
 (適当に訳) 定期課金の状態。例えば、有効かキャンセル済みか。
 ステータス : 不明、支払い待ち、有効、一時停止、支払い猶予期間、保留中、キャンセル、有効期限切れ
-}
+//}
 
 == サーバーAPI v2から無償期間が取得できない
 
