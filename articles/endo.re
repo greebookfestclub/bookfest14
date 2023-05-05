@@ -47,7 +47,7 @@ v1からv2への変更ではGoogleの新しい定期課金についての機能�
 
 == サーバーAPI v2から無償期間が取得できない
 
-新しい定期課金への移行ドキュメント@<fn>{endofn06}では、当初は無償期間の取得はv2 APIでは「coming soon」扱いになっていました。しかし、paymentState値についての記述がいつの間にか変わり、「coming soon」が消えて取得できるようになる見込みが無くなってしいました。
+このことは他のドキュメントでも意識されています。新しい定期課金への移行ドキュメント@<fn>{endofn06}では、当初は無償期間の取得はv2 APIでは「coming soon」扱いになっていました。しかし、paymentState値についての記述がいつの間にか変りました。「coming soon」が消えたことから、この値は取得できるようになる見込みが無くなってしいました。
 //footnote[endofn06][https://developer.android.com/google/play/billing/compatibility?hl=ja]
 
 //indepimage[v1api_paymentstate_1][画像 2022-09-30時点]
