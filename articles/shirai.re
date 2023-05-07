@@ -252,9 +252,9 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 //image[shirai-img/2023-03-21][【論文】文化・技術・研究史で読み解く令和のメタバースの研究開発 - note版]{ 
 //}
 
-=== [mmm] Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023 (2023-03-23)
+=== 【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023 (2023-03-23)
 
-//image[shirai-img/2023-03-23][[mmm] Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023]{ 
+//image[shirai-img/2023-03-23][【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023]{ 
 //}
 
 === #AIと漫画 素敵な作品を紹介する (2023-03-24)
