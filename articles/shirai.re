@@ -43,7 +43,7 @@
 
 === #メディア芸術祭 公募展中止、理由がわからなかったので徹底的に調べてみた。 (2022-08-29)
 
-//image[shirai-img/2022-08-29][#メディア芸術祭 公募展中止、理由がわからなかったので徹底的に調べてみた。]{ 
+//image[shirai-img/技術書典14_6][#メディア芸術祭 公募展中止、理由がわからなかったので徹底的に調べてみた。]{ 
 //}
 
 
@@ -431,9 +431,63 @@ OpenAIの裏APIを叩いて利用状況を取得する｜しらいはかせ(作�
 「窓の杜」というメディアにおいては、WindowsPCをお仕事の効率化やホビーとして楽しむ、という原点に立ち返って楽しめている様子、そしてそこの楽しみ方は自由なんだなという原点が尊いと思いました。
 
 
-https://twitter.com/o_ob/status/1653644014158221312
+== この原稿を生成した Google Apps Script たち
 
-//listnum[source-code][スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化するコード]{
+昔からこういう原稿生成スクリプトを作りたかったのですが、今回、60件近いブログ（実際には「つぶやき」もあるので90件超え）を処理するため、Google Apps Scriptを作りました。
+
+//listnum[Google Apps Script 1][スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化するコード]{
+// 参考にしたコード https://note.com/specially198/n/n7ed537c0bb4c
+function getNoteArticles() {
+ const userName = "o_ob";
+ const url = `https://note.com/api/v2/creators/${userName}/contents?kind=note`;
+ // APIで記事を取得する
+ let jsonArticleInfo = UrlFetchApp.fetch(url, {'method':'get'});
+ let articleInfos = JSON.parse(jsonArticleInfo.getContentText());
+ let output = makeOutput(articleInfos.data.contents);
+ // 記事数が2ページ以上ある場合は、総ページ数分、繰り返し処理する
+ if (!articleInfos.data.isLastPage) {
+   let page = 2;
+   while(true) {
+     jsonArticleInfo = UrlFetchApp.fetch(`${url}&page=${page}`, {'method':'get'});
+     articleInfos = JSON.parse(jsonArticleInfo.getContentText());
+     let tmp = makeOutput(articleInfos.data.contents);
+     output = output.concat(tmp);
+     if (articleInfos.data.isLastPage) {
+       break;
+     }
+     page++;
+   }
+ }
+ let sheetNoteArticleList = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('note記事一覧');
+ sheetNoteArticleList.getRange(2, 1, output.length, output[0].length).setValues(output);
+}
+//spreadsheetに一覧を作ります
+function makeOutput(contents) {
+ let output = [];
+ for (let articleInfo of contents) {
+   let row = [];
+   row.push(articleInfo.publishAt);
+   row.push(articleInfo.noteUrl);
+   row.push(articleInfo.eyecatch);
+   row.push("https://chart.apis.google.com/chart?cht=qr&chs=450x450&chl="+articleInfo.noteUrl)
+   row.push(articleInfo.name);
+   row.push('=IMAGE("'+articleInfo.eyecatch+'")');
+   row.push('=image("https://chart.apis.google.com/chart?cht=qr&chs=450x450&chl="&B2)')
+   output.push(row);
+ }
+ return output;
+}
+//}
+
+//image[shirai-img/ssindex][こうして生成されたスプレッドシート。QRコードもチェックできます。]{ 
+//}
+
+ここからOpenAIのAPIを叩いて各ブログアーティクルの概要とか作ってもいいのですが、それはやめておきます！
+
+というのも、私のブログはめちゃ長いのでそんな簡単に要約できませんので……！
+
+
+//listnum[Google Apps Script 2][スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化するコード]{
 
 function insertImageToSheet() {
   //スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化
@@ -464,4 +518,9 @@ function insertImageToSheet() {
      slide.getNotesPage().getSpeakerNotesShape().getText().appendText(range[i][3]+"\n"+range[i][0]);
     }
   }
+//}
+
+生成したスライドをPNG画像に変換します。これもスクリプトで処理しています。
+
+//image[shirai-img/slideindex][こうして生成されたPNG画像たち。都合よくリネームする方法がわからないのでこれはスプレッドシート側でどうにかするか……]{ 
 //}
