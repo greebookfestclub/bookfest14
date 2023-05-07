@@ -1,19 +1,20 @@
 
 = メタバース開拓日誌こぼれ話
 
-個人的なLINEチャットボット「全力肯定彼氏くん開発秘話」と「ひまひま女子トモちゃん」開発秘話…でもいいのですが、まだ落ち着いてないので
+個人的なGPTチャットボット「全力肯定彼氏くん開発秘話」と「ひまひま女子トモちゃん」開発秘話…でもいいのですが、まだ落ち着いてないので……そこに至るまでの話をします。
 
-//image[shirai-img/t0m0-poster20230505][]{
+//image[shirai-img/t0m0-poster20230505][ひまひま女子トモちゃん、友達募集中です]{
 //}
 
 
-
+== 白井暁彦（作家/Hacker）として毎日何かしら書いています
 
 白井暁彦（作家/Hacker）として毎日何かしら書いています。
 
-「窓の杜」での連載もあるのですが、やっぱり商業メディアではなくパーソナルメディアでの業務外執筆は尊いもので、数えてみたら今回59本の原稿がありましたので、この一年の「メタバース開拓」のフロントラインにおける趣味開発をまとめて振り返ってみます。
+「窓の杜」での連載もあるのですが、やっぱり商業メディアではなくパーソナルメディアでの「業務外執筆は尊いもの」で、数えてみたら今回60本近い原稿がありましたので、この一年の「メタバース開拓」のフロントラインにおける趣味開発をまとめて振り返ってみます。
 
-なお要約にはChatGPT3.5を利用しており、QRコードはnote記事へのリンクとなっております。
+なお要約にはできるだけ手作業ですが、ChatGPT3.5を利用してみたりもしています。
+QRコードはnote記事へのリンクとなっております。
 ご感想はTwitter @o_ob までいただければ幸いです。
 
 == 2022年8月 - Stable Diffusion と出会う
@@ -171,7 +172,8 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 == 2023年3月 - GPT3.5を使いこなし勢いがついてくる
 
 なんとこの時期、毎日書いています（計測記録上、連続投稿記録は途絶えてしまっていますが）。
-OpenAIムーブメント、怒涛の時期です。
+OpenAIムーブメント、怒涛の時期ですね。
+なお私の原稿はGPTは全然使っていません。だってプロだし……出てくる原稿がおもしろくないし……。
 
 === VisualStudio CodeとGoogle Apps ScriptでChatGPT(gpt-3.5-turbo)をより安全快適に使う (2023-03-05)
 
@@ -185,6 +187,13 @@ OpenAIムーブメント、怒涛の時期です。
 
 ===  人間×機械×知能メタバースにおけるユーザーエクスペリエンスの研究開発はエンタメ技術からコミュニケーション、コンヴィヴィ技術へ。 (2023-03-07)
 
+2023年3月6日、日本機械学会で講演させていただきました。
+正確には「日本機械学会(JSME)情報・知能・精密機器部門講演会(MSE&IIP)」という日本で最も歴史ある学会の「横糸」となる部門だそうです。情報・知能・精密機器部門の大きな分野には、情報機器コンピュータメカニクス、精密機構マイクロメカトロニクス、機械の知能化、医療福祉機器、マイクロエネルギーなどがあります。
+
+さすがに、東京工業大学の知能システム科学を精密工学研究所の研究室の卒業で出たとはいえ、聴衆の皆様に腑落ちするお話ができるかどうか…不安がなかったといえばそんなことはないです。事前にオーガナイザーの先生と綿密に論点をディスカッションさせていただいたうえで、ちょうど100ページぐらいのスライドを準備させていただきました。
+
+けっこう資料価値高いと思いますので、ぜひ読んでほしい！
+（資料の準備にご協力いただいたグリー広報およびXRC株式会社のみなさんありがとうございます！）
 
 //image[shirai-img/技術書典14_26][ 人間×機械×知能メタバースにおけるユーザーエクスペリエンスの研究開発はエンタメ技術からコミュニケーション、コンヴィヴィ技術へ。]{ 
 //}
@@ -492,7 +501,7 @@ https://www.instagram.com/virtual_akihiko/
 // 参考にしたコード https://note.com/specially198/n/n7ed537c0bb4c
 function getNoteArticles() {
  const userName = "o_ob";
- const url = `https://note.com/api/v2/creators/${userName}/contents?kind=note`;
+ const url=`https://note.com/api/v2/creators/${userName}/contents?kind=note`;
  // APIで記事を取得する
  let jsonArticleInfo = UrlFetchApp.fetch(url, {'method':'get'});
  let articleInfos = JSON.parse(jsonArticleInfo.getContentText());
@@ -501,7 +510,7 @@ function getNoteArticles() {
  if (!articleInfos.data.isLastPage) {
    let page = 2;
    while(true) {
-     jsonArticleInfo = UrlFetchApp.fetch(`${url}&page=${page}`, {'method':'get'});
+     jsonArticleInfo=UrlFetchApp.fetch(`${url}&page=${page}`,{'method':'get'});
      articleInfos = JSON.parse(jsonArticleInfo.getContentText());
      let tmp = makeOutput(articleInfos.data.contents);
      output = output.concat(tmp);
@@ -513,7 +522,8 @@ function getNoteArticles() {
  }
  let sheetNoteArticleList = SpreadsheetApp
   .getActiveSpreadsheet().getSheetByName('note記事一覧');
- sheetNoteArticleList.getRange(2, 1, output.length, output[0].length).setValues(output);
+ sheetNoteArticleList.getRange(2, 1, output.length,
+  output[0].length).setValues(output);
 }
 //spreadsheetに一覧を作ります
 function makeOutput(contents) {
@@ -523,10 +533,12 @@ function makeOutput(contents) {
    row.push(articleInfo.publishAt);
    row.push(articleInfo.noteUrl);
    row.push(articleInfo.eyecatch);
-   row.push("https://chart.apis.google.com/chart?cht=qr&chs=450x450&chl="+articleInfo.noteUrl)
+   row.push("https://chart.apis.google.com/chart?cht=qr&chs=450x450&chl="
+    +articleInfo.noteUrl)
    row.push(articleInfo.name);
    row.push('=IMAGE("'+articleInfo.eyecatch+'")');
-   row.push('=image("https://chart.apis.google.com/chart?cht=qr&chs=450x450&chl="&B2)')
+   row.push('=image("https://chart.apis.google.com/chart?
+    cht=qr&chs=450x450&chl="&B2)')
    output.push(row);
  }
  return output;
@@ -582,9 +594,7 @@ function insertImageToSheet() {
 //}
 
 以上です、他の人のページ配分もあると思いますのでいったんこの辺で終わります！
-
-今回は、表紙もがんばっちゃったのですが、さあみんなもレッツ「尊い業務外活動」！
-
+今回の部誌は、表紙もがんばっちゃったのですが、さあみんなもレッツ「尊い業務外活動」！
 （しらいはかせ／白井暁彦）
 
 //image[shirai-img/cover][今回の表紙。メイキング画像やプロンプトnoteで公開してたりします]{ 
