@@ -254,8 +254,34 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 
 === 【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023 (2023-03-23)
 
-//image[shirai-img/2023-03-23][【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023]{ 
+これはフランスで公開したティザー動画の紹介になります。
+
+ごくごく珍しくお仕事の話をしていますね。
+
+https://vr.gree.net/lab/uxdev/mmm/
+
+
+//image[shirai-img/mmm][【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023]{ 
 //}
+
+
+メタバース・モードメーカーは、メタバース「REALITY」における新しいUGC-UXの概念実証プロジェクトです。
+
+モード（ファッションコーディネート）におけるユーザー生成コンテンツ（UGC）に着目し、生成型AIによってユーザーのインスピレーションとモーションをサポートします。
+ユーザーは、REALITY.アプリ上でベースとなるスタイルを選択します。そして、それをVRでデザインしたいと思うかもしれません。
+でも、本当にテクスチャを全部描きたいですか？VRで？
+
+今回のデモプロジェクトでは、AIを活用した新しいファッションコーディネートシステムをご覧いただけます。
+VRの中で新しいデザインに参加することができ、公開されたデザインはデータベースで共有されるので、オリジナリティを保護することができます。
+
+また、メタクエストのモーションキャプチャーツール「QueTra」を使って、上半身のアニメーションを作成することができます。また、SONYの新しいモバイルモーションキャプチャーデバイス「mocopi」も使用予定です。
+AI Fusion技術により、美しい歩行モーションと融合させ、上半身のパフォーマンスを表現します。
+また、オリジナルのデザインやモーションで音楽劇を表現することもできます。
+また、VibeShare YouTubeLiveによるオンライン投票により、世界中から応援を受けることができます！
+
+このプロジェクトは、アバター主導のUGCを実現し、メタバースの未来価値を高めるとともに、人々の創造性を高め、パーソナルブランドや非言語・異文化コミュニケーションを発展させることを目的としています。
+私たちは常につながっていました。
+これから先、私たちはどこで、誰と、どのようにつながっていくのでしょうか。
 
 === #AIと漫画 素敵な作品を紹介する (2023-03-24)
 
@@ -398,6 +424,7 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 //image[shirai-img/2023-05-07][OpenAIの裏APIを叩いて利用状況を取得する]{ 
 //}"
 
+
 OpenAIの裏APIを叩いて利用状況を取得する｜しらいはかせ(作家) @o_ob #note https://note.com/o_ob/n/n07a27ca94475 
 
 
@@ -406,6 +433,35 @@ OpenAIの裏APIを叩いて利用状況を取得する｜しらいはかせ(作�
 
 https://twitter.com/o_ob/status/1653644014158221312
 
+//listnum[source-code][スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化するコード]{
 
+function insertImageToSheet() {
+  //スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化
+  let presentation = SlidesApp.getActivePresentation()
+  let slides = presentation.getSlides();
+  // QRを左710に移動
+  Logger.log(slides[1].getImages()[0].getLeft().toString());
+  Logger.log(slides[1].getImages()[0].getTop().toString());
+  slides[1].getImages()[0].setLeft(710); //QRを右に寄せたかった
+  Logger.log("scale = "+ presentation.getSlides()[1].getImages()[0].getTransform().getScaleX().toString());
 
-
+  let ss = SpreadsheetApp.openById("(SpreadsheetのID)").getSheetByName("note記事一覧");
+  var range = ss.getRange(2,2,94,4).getValues();
+  for (let i=0; i<=94; i++) {
+    Logger.log(range[i][0]); //URL
+    Logger.log(range[i][1]); //cover
+    Logger.log(range[i][2]); //QR
+    Logger.log(range[i][3]); //title
+   //タイトルとカバーがあるもののみ処理
+    if ((range[i][3]!="")&&(range[i][1]!="")) {
+     let QR_blob = UrlFetchApp.fetch(range[i][2]).getBlob();
+     let slide = presentation.appendSlide(SlidesApp.PredefinedLayout.BLANK);
+     slide.insertImage(QR_blob);
+     let QR_object = slide.getImages()[0];
+     QR_object.setLeft(710);
+     let cover = UrlFetchApp.fetch(range[i][1]).getBlob();
+     slide.insertImage(cover);
+     slide.getNotesPage().getSpeakerNotesShape().getText().appendText(range[i][3]+"\n"+range[i][0]);
+    }
+  }
+//}
