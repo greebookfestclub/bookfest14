@@ -374,6 +374,10 @@ AI Fusion技術により、美しい歩行モーションと融合させ、上�
 //}
 
 
+この期間はフランス「Laval Virtual 2023」で展示をやっていたので主にインスタです。
+
+https://www.instagram.com/virtual_akihiko/
+
 === 博士課程の最中に子供産みました (2023-04-18)
 
 //image[shirai-img/2023-04-18][博士課程の最中に子供産みました]{ 
@@ -458,7 +462,8 @@ function getNoteArticles() {
      page++;
    }
  }
- let sheetNoteArticleList = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('note記事一覧');
+ let sheetNoteArticleList = SpreadsheetApp
+  .getActiveSpreadsheet().getSheetByName('note記事一覧');
  sheetNoteArticleList.getRange(2, 1, output.length, output[0].length).setValues(output);
 }
 //spreadsheetに一覧を作ります
@@ -497,8 +502,6 @@ function insertImageToSheet() {
   Logger.log(slides[1].getImages()[0].getLeft().toString());
   Logger.log(slides[1].getImages()[0].getTop().toString());
   slides[1].getImages()[0].setLeft(710); //QRを右に寄せたかった
-  Logger.log("scale = "+ presentation.getSlides()[1].getImages()[0].getTransform().getScaleX().toString());
-
   let ss = SpreadsheetApp.openById("(SpreadsheetのID)").getSheetByName("note記事一覧");
   var range = ss.getRange(2,2,94,4).getValues();
   for (let i=0; i<=94; i++) {
@@ -515,7 +518,8 @@ function insertImageToSheet() {
      QR_object.setLeft(710);
      let cover = UrlFetchApp.fetch(range[i][1]).getBlob();
      slide.insertImage(cover);
-     slide.getNotesPage().getSpeakerNotesShape().getText().appendText(range[i][3]+"\n"+range[i][0]);
+     slide.getNotesPage().getSpeakerNotesShape()
+      .getText().appendText(range[i][3]+"\n"+range[i][0]);
     }
   }
 //}
