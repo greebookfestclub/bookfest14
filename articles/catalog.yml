@@ -2,9 +2,8 @@ PREDEF:
   - preface.re
 
 CHAPS:
-  - higuchi.re
   - endo.re
-  - takatsu.re
+  - higuchi.re
   - shirai.re
 
 APPENDIX:
