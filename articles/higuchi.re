@@ -148,6 +148,63 @@ Run Allすると、クロールして取得した情報から学習し、質問�
 
 //indepimage[higuchi_bot3][推論]
 
+=== 分類
+分類もよくある機械学習タスクです。
+通常は大量のデータを使った学習が必要です。
+ここではopenaiの学習済みのモデルを微調整することにより、少ないデータで分類を行なってみます。
+
+まず、元となるデータを作成します。
+今回は、施設名からその施設が宿泊施設か観光施設かを分類してみます。
+
+//indepimage[higuchi_cla1][施設データ]
+
+それをcsvでダウンロードし、Jupiterからアクセスしやすいディレクトリにコピーします。
+
+//cmd{
+cp ~/Downloads/bquxjob_xxxx_xxxx.csv openai-cookbook/examples/data/spot_list.csv
+//}
+
+Jupiterで新しいnoteを開いて、一番上に必要なパッケージのインストールを追加します。
+
+//cmd{
+!pip install openai pandas
+//}
+
+用意したデータを読み込むようにします。
+
+//cmd{
+import pandas as pd
+import openai
+
+dataset_path = "data/spot_list.csv"
+df = pd.read_csv(dataset_path)
+df.to_json("spot_list.jsonl", orient='records', lines=True)
+//}
+
+このデータを学習とテストに分けます。
+
+//cmd{
+!openai tools fine_tunes.prepare_data -f spot_list.jsonl -q
+//}
+
+次にモデルの微調整を行います。
+
+//cmd{
+! openai api fine_tunes.create -t "spot_list_prepared_train.jsonl" 
+  -v "spot_list_prepared_valid.jsonl" 
+  --compute_classification_metrics 
+  --classification_positive_class " leisure"
+//}
+
+サンプルのノートには、10分程度かかると書いてありますが、4時間程度かかりました。
+微調整が終わったら施設名を分類してみると、期待通りに分類されました。
+
+//cmd{
+res = openai.Completion.create(model=ft_model, prompt='よみうりランド' + '\n\n###\n\n', max_tokens=1, temperature=0, logprobs=2)
+res['choices'][0]['text']
+
+Output: " leisure"
+//}
 
 == まとめ
 OpenAI APIを使うことにより、モデルの学習や推論を簡単に行うことができるようになりました。
