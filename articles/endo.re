@@ -1,5 +1,5 @@
 
-= Android定期課金のGoogle Play Developer API v2系では無償期間が取れなくなるのか？
+= Android定期課金のAPI v2系では無償期間が取れなくなるのか？
 
 == 概要
 この記事では、2022年5月に発表されたGoogle Playのサブスクリプション向けの新APIの、無償期間の扱いについて検討します。
