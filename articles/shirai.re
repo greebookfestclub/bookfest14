@@ -33,6 +33,8 @@ QRコードはnote記事へのリンクとなっております。
 //image[shirai-img/技術書典14_4][白井暁彦（作家）]{ 
 //}
 
+https://note.com/o_ob/n/nc0c6f487161e
+
 === 人工知能とともに絵を描くという行為が人類にどんな影響を与えているか(1) (2022-08-28)
 
 のちの「AIとコラボして神絵師になる」の原稿のきっかけになったエントリーです。
@@ -44,6 +46,9 @@ QRコードはnote記事へのリンクとなっております。
 //image[shirai-img/技術書典14_5][人工知能とともに絵を描くという行為が人類にどんな影響を与えているか(1)]{ 
 //}
 
+https://note.com/o_ob/n/nbf93a5ec5b25
+
+
 この当時はpixivにもAI生成画像を公開している人はほとんどいなくて、すごく人気になったことを覚えています。
 1枚1枚、Photoshopでレタッチしてから公開していました。
 
@@ -53,6 +58,9 @@ QRコードはnote記事へのリンクとなっております。
 //image[shirai-img/技術書典14_6][#メディア芸術祭 公募展中止、理由がわからなかったので徹底的に調べてみた。]{ 
 //}
 
+https://note.com/o_ob/n/nb83d7e6a2bea
+
+あとからみると社会活動家みたいですけど、当時は本当に疑問だったんですよ。
 
 == 2022年9月 - 技術書典13が9月11日に開催される
 
@@ -65,6 +73,9 @@ QRコードはnote記事へのリンクとなっております。
 //image[shirai-img/技術書典14_7][どうやら本気で終わるらしい - R5概算要求から読み解く #メディア芸術祭 の未来]{ 
 //}
 
+
+https://note.com/o_ob/n/nbf099580f751
+
 === スマホでも使えるAI神絵師「Dream Studio」公式ガイドの和訳から学ぶ呪文の基本 #StableDiffusion (2022-09-03)
 
 脳が発火する感覚。今でも覚えています。
@@ -72,10 +83,14 @@ QRコードはnote記事へのリンクとなっております。
 //image[shirai-img/技術書典14_8][スマホでも使えるAI神絵師「Dream Studio」公式ガイドの和訳から学ぶ呪文の基本 #StableDiffusion]{ 
 //}
 
+https://note.com/o_ob/n/n8504d56b990d
+
 === 人工知能とともに絵を描くという行為が人類にどんな影響を与えているか？(2)人類は働きたいか。自分で描きたいか。 (2022-09-04)
 
 //image[shirai-img/技術書典14_9][人工知能とともに絵を描くという行為が人類にどんな影響を与えているか？(2)人類は働きたいか。自分で描きたいか。]{ 
 //}
+
+https://note.com/o_ob/n/nbdc7dbcdb666
 
 === ジョイコンが壊れたら「自分で直そう」ゲーム機の修理からはじめる #STEAM教育 のススメ (2022-09-21)
 
@@ -84,10 +99,14 @@ QRコードはnote記事へのリンクとなっております。
 //image[shirai-img/技術書典14_10][ジョイコンが壊れたら「自分で直そう」ゲーム機の修理からはじめる #STEAM教育 のススメ]{ 
 //}
 
+https://note.com/o_ob/n/n1fad701877a0
+
 === "さいごの"文化庁メディア芸術祭にいってきた #メディア芸術祭終わらないで (2022-09-24)
 
 //image[shirai-img/技術書典14_11][「あつまるな！やまひょうと森」という作品]{ 
 //}
+
+https://note.com/o_ob/n/n0d8597400d8b
 
 == 2022年10月 - 商業書籍の校正作業がめちゃ忙しかった
 
@@ -103,12 +122,16 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 //image[shirai-img/技術書典14_12][文化庁メディア芸術祭の終了宣言についての意見まとめ]{ 
 //}
 
-=== 「文化庁メディア芸術祭の終了宣言についての意見書」 (2022-10-23)
+https://note.com/o_ob/n/n1ff87acbef51
 
-皆さんからの意見をまとめて、文化庁と文科省にお送りしました。
+=== 「文化庁メディア芸術祭の終了宣言についての意見書」 (2022-10-23)
 
 //image[shirai-img/技術書典14_13][「文化庁メディア芸術祭の終了宣言についての意見書」]{ 
 //}
+
+https://note.com/o_ob/n/n06e5d853f830
+
+皆さんからの意見をまとめて、文化庁と文科省にお送りしました。
 
 === #AI神絵師本 神速リリースしました！ (2022-10-24)
 
@@ -116,6 +139,8 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 
 //image[shirai-img/技術書典14_14][#AI神絵師本 神速リリースしました！]{ 
 //}
+
+https://note.com/o_ob/n/n2b87af213279
 
 == 2022年11月 - AI画像生成の世界が大爆発
 
@@ -130,10 +155,15 @@ Stable Diffusionのリリースからちょうど2か月。我ながら速かっ
 //image[shirai-img/技術書典14_15][フランス大使館を訪問しました]{ 
 //}
 
+https://note.com/o_ob/n/n9a9163eab513
+
 === 週刊AI神絵師 2022/10/16-10/22 - NovelAIによる技術改善の詳細 (2022-11-08)
 
 //image[shirai-img/技術書典14_16][週刊AI神絵師 2022/10/16-10/22 - NovelAIによる技術改善の詳細]{ 
 //}
+
+
+https://note.com/o_ob/n/nb09cbfcbf367
 
 === 週刊AI神絵師 2022/10/23～10/29 - AI神絵師本発売開始 - ネガティブワード手法の分析が進む (2022-11-14)
 
@@ -153,20 +183,28 @@ https://youtu.be/GpvI_NC3ggU
 //image[shirai-img/技術書典14_17][https://note.com/o_ob/n/ncbc6b346b697]{ 
 //}
 
+https://note.com/o_ob/n/ncbc6b346b697
+
 === 週刊AI神絵師 2022/10/30～11/5 - 元素法典 と #AI神絵師本 がリリースされる (2022-11-22)
 
 //image[shirai-img/技術書典14_18][週刊AI神絵師 2022/10/30～11/5 - 元素法典 と #AI神絵師本 がリリースされる]{ 
 //}
+
+https://note.com/o_ob/n/nadcb0320ace3
 
 === 文化庁から(メディア芸術祭終了についての)お返事をいただきました (2022-11-25)
 
 //image[shirai-img/技術書典14_19][文化庁から(メディア芸術祭終了についての)お返事をいただきました]{ 
 //}
 
+https://note.com/o_ob/n/n691184ebfa24
+
 === Stable Diffusion 2.0 Release日本語参考訳 (2022-11-26)
 
 //image[shirai-img/技術書典14_20][Stable Diffusion 2.0 Release日本語参考訳]{ 
 //}
+
+https://note.com/o_ob/n/n35e384135719
 
 == 2022年12月 - 若干のペースダウン
 
@@ -177,10 +215,14 @@ https://youtu.be/GpvI_NC3ggU
 //image[shirai-img/技術書典14_21][dアカウントの魔境をみた]{ 
 //}
 
+https://note.com/o_ob/n/n48c44adfb87c
+
 === ぼくのDiscordにAI神絵師を召喚した件(GradioBotリリース記念) (2022-12-23)
 
 //image[shirai-img/技術書典14_22][ぼくのDiscordにAI神絵師を召喚した件(GradioBotリリース記念)]{ 
 //}
+
+https://note.com/o_ob/n/nb63c61ce669e
 
 == 2023年1月～2月 OpenAIにどっぷりはまっている時期
 
@@ -195,6 +237,9 @@ https://youtu.be/GpvI_NC3ggU
 //image[shirai-img/技術書典14_23][OpenAIのCEO - Sam Altman CEO頭の中を覗いた]{ 
 //}
 
+
+https://note.com/o_ob/n/n9493438e24fb
+
 == 2023年3月 - GPT3.5を使いこなし勢いがついてくる
 
 なんとこの時期、毎日書いています（計測記録上、連続投稿記録は途絶えてしまっていますが）。
@@ -206,10 +251,16 @@ OpenAIムーブメント、怒涛の時期ですね。
 //image[shirai-img/技術書典14_24][VisualStudio CodeとGoogle Apps ScriptでChatGPT(gpt-3.5-turbo)をより安全快適に使う]{ 
 //}
 
+https://note.com/o_ob/n/nad0a6259e482
+
 === 「生成AI市場の今後の話」講演まとめ (2023-03-06)
 
 //image[shirai-img/技術書典14_25][「生成AI市場の今後の話」講演まとめ]{ 
 //}
+
+https://note.com/o_ob/n/n5b7ca9ae66a9
+
+2023/2/10に開催された翔泳社デベロッパーサミット2023にて「AI神絵師はITエンジニアの未来をどう変えるのか？～メタバースR&DからみたAI画像生成のトレンド～AI神絵師はITエンジニアの未来をどう変えるのか？」という講演をさせていただきました。
 
 ===  人間×機械×知能メタバースにおけるユーザーエクスペリエンスの研究開発はエンタメ技術からコミュニケーション、コンヴィヴィ技術へ。 (2023-03-07)
 
@@ -224,63 +275,87 @@ OpenAIムーブメント、怒涛の時期ですね。
 //image[shirai-img/技術書典14_26][ 人間×機械×知能メタバースにおけるユーザーエクスペリエンスの研究開発はエンタメ技術からコミュニケーション、コンヴィヴィ技術へ。]{ 
 //}
 
-=== この春、新大学生の「PC購入のご案内」にMacがいたときにお父さんがとるべき態度とは。 (2023-03-08)
+https://note.com/o_ob/n/n95c65ed6b765
 
-息子が大学に進学するたびにバズってしまうこのネタ……みなさんのお子さんでもぜひご検討ください。
+
+=== この春、新大学生の「PC購入のご案内」にMacがいたときにお父さんがとるべき態度とは。 (2023-03-08)
 
 //image[shirai-img/技術書典14_27][この春、新大学生の「PC購入のご案内」にMacがいたときにお父さんがとるべき態度とは。]{ 
 //}
+
+https://note.com/o_ob/n/nce8c324105e1
+
+息子が大学に進学するたびにバズってしまうこのネタ……みなさんのお子さんでもぜひご検討ください。
+
 
 === フランスでAITuber的な新作をデモします (2023-03-09)
 
 //image[shirai-img/技術書典14_28][フランスでAITuber的な新作をデモします]{ 
 //}
 
-=== 生成AIを使いこなす物書き業がオレオレ詐欺の被害者になった話 (2023-03-10)
+https://note.com/o_ob/n/n0a0b34bb5a21
 
-いやあ……これは本当にひどかった。オレオレ詐欺ゆるすまじ！
+=== 生成AIを使いこなす物書き業がオレオレ詐欺の被害者になった話 (2023-03-10)
 
 //image[shirai-img/技術書典14_29][生成AIを使いこなす物書き業がオレオレ詐欺の被害者になった話]{ 
 //}
 
-=== SlidesGPTによって人類はパワポ生成から解放されるのか。 (2023-03-11)
+https://note.com/o_ob/n/nafc93f4b20fa
 
-今回の原稿で、パワポ制作どころか、原稿の制作ワークフローもずいぶん変わりました。
+いやあ……これは本当にひどかった。オレオレ詐欺ゆるすまじ！
+
+=== SlidesGPTによって人類はパワポ生成から解放されるのか。 (2023-03-11)
 
 //image[shirai-img/技術書典14_30][SlidesGPTによって人類はパワポ生成から解放されるのか。]{ 
 //}
 
-=== ChatGPTはゲームを開発を手伝えるか (2023-03-12)
+https://note.com/o_ob/n/n4ade6bf4d5c3
 
-このあとけっこうGPTを使ったゲームが出てきたので、先行してPoC出来た感じはしますね。
+今回の原稿で、パワポ制作どころか、原稿の制作ワークフローもずいぶん変わりました。
+
+=== ChatGPTはゲームを開発を手伝えるか (2023-03-12)
 
 //image[shirai-img/技術書典14_31][ChatGPTはゲームを開発を手伝えるか]{ 
 //}
+
+https://note.com/o_ob/n/nc491c3811ff4
+
+このあとけっこうGPTを使ったゲームが出てきたので、先行してPoC出来た感じはしますね。
 
 === ChatGPTにアイドルに提供する曲を作詞作曲MIDI生成までさせてみた (2023-03-12)
 
 //image[shirai-img/技術書典14_32][ChatGPTにアイドルに提供する曲を作詞作曲MIDI生成までさせてみた]{ 
 //}
 
+https://note.com/o_ob/n/n690b0616e70a
+
 === 第1回 AI Art GrandPrix が素晴らしかった件 (2023-03-13)
 
 //image[shirai-img/技術書典14_33][第1回 AI Art GrandPrix が素晴らしかった件]{ 
 //}
+
+https://note.com/o_ob/n/n9118dbf0b870
 
 === ChatGPTでグラフィックスを生成する (2023-03-14)
 
 //image[shirai-img/技術書典14_34][ChatGPTでグラフィックスを生成する]{ 
 //}
 
+https://note.com/o_ob/n/n490540beb6b3
+
 === Quora「Poe」GPT-4をさわってみる (2023-03-16)
 
 //image[shirai-img/技術書典14_35][Quora「Poe」GPT-4をさわってみる]{ 
 //}
 
+https://note.com/o_ob/n/n2389e5e77af4
+
 === 幻の「うめきた新駅」、開業まえに行ってきた！ #うめきた #JR西日本 (2023-03-16)
 
 //image[shirai-img/技術書典14_36][幻の「うめきた新駅」、開業まえに行ってきた！ #うめきた #JR西日本]{ 
 //}
+
+https://note.com/o_ob/n/n0c3690b6a2b2
 
 === カッとなってGPT-4で確定申告をスマートにした (2023-03-17)
 
@@ -289,20 +364,28 @@ OpenAIムーブメント、怒涛の時期ですね。
 //image[shirai-img/技術書典14_37][カッとなってGPT-4で確定申告をスマートにした]{ 
 //}
 
+https://note.com/o_ob/n/ne417553bda58
+
 === IVRC2023に「メタバース部門」ができるのでがんばって"後方彼氏ヅラ"して腕組みして応援した (2023-03-18)
 
 //image[shirai-img/技術書典14_38][IVRC2023に「メタバース部門」ができるのでがんばって"後方彼氏ヅラ"して腕組みして応援した]{ 
 //}
+
+https://note.com/o_ob/n/n09cd45a515ab
 
 === ぼくらは「シンギュラリティがはじまる場所」を知っている。 (2023-03-19)
 
 //image[shirai-img/技術書典14_39][ぼくらは「シンギュラリティがはじまる場所」を知っている。]{ 
 //}
 
+https://note.com/o_ob/n/nca57cef2b699
+
 === OpenAI公式文書に基づきGPT4に「倫理的脱獄」を誑かす(たぶらかす) (2023-03-20)
 
 //image[shirai-img/技術書典14_40][OpenAI公式文書に基づきGPT4に「倫理的脱獄」を誑かす(たぶらかす)]{ 
 //}
+
+https://note.com/o_ob/n/n68bd7db03162
 
 === 【論文】文化・技術・研究史で読み解く令和のメタバースの研究開発 - note版 (2023-03-21)
 
@@ -310,12 +393,15 @@ OpenAIムーブメント、怒涛の時期ですね。
 //image[shirai-img/技術書典14_41][【論文】文化・技術・研究史で読み解く令和のメタバースの研究開発 - note版]{ 
 //}
 
+https://note.com/o_ob/n/nb859b3e45ae0
+
 === 【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023 (2023-03-23)
 
 //image[shirai-img/mmm][【mmm】 Metaverse Mode Maker teaser - GREE VR Studio Laboratory - #LavalVirtual2023]{ 
 //}
 
-これはフランスで公開したティザー動画の紹介になります。
+https://note.com/o_ob/n/ncf7acc915238
+これはフランスでの発表向けて公開したティザー動画の紹介になります。
 
 ごくごく珍しくお仕事の話をしていますね。
 
@@ -344,20 +430,27 @@ AI Fusion技術により、美しい歩行モーションと融合させ、上�
 //image[shirai-img/技術書典14_42][#AIと漫画 素敵な作品を紹介する]{ 
 //}
 
+https://note.com/o_ob/n/n7e3ac2768d3e
+
 === 「第1回ChatGPT選手権 LT大会」雑な資料まとめ #GPT_findy (2023-03-24)
 
 //image[shirai-img/技術書典14_43][「第1回ChatGPT選手権 LT大会」雑な資料まとめ #GPT_findy]{ 
 //}
+
+https://note.com/o_ob/n/n253f1c60f908
 
 === メタバース時代に学生を育てる価値とは (2023-03-26)
 
 //image[shirai-img/技術書典14_44][メタバース時代に学生を育てる価値とは]{ 
 //}
 
+https://note.com/o_ob/n/n23e1112d2a2c
 === 大学の先輩がサハリンで撮り続けている (2023-03-27)
 
 //image[shirai-img/技術書典14_45][大学の先輩がサハリンで撮り続けている]{ 
 //}
+
+https://note.com/o_ob/n/n4d6bb6e45842
 
 実は自分は写真の出身でありました。
 
@@ -366,15 +459,22 @@ AI Fusion技術により、美しい歩行モーションと融合させ、上�
 //image[shirai-img/技術書典14_47][【プロンプト有】ChatGPTに飛行機予約を手伝ってもらう]{ 
 //}
 
+
+https://note.com/o_ob/n/nb5870965cbe9
+
 === ChatGPT→LangChainをもくもく学習した話 (2023-03-30)
 
 //image[shirai-img/技術書典14_48][ChatGPT→LangChainをもくもく学習した話]{ 
 //}
 
+https://note.com/o_ob/n/n8387ba5beec8
+
 === LangChainもくもく会-ザツソウで仕入れたデプロイ先情報など (2023-03-31)
 
 //image[shirai-img/技術書典14_49][LangChainもくもく会-ザツソウで仕入れたデプロイ先情報など]{ 
 //}
+
+https://note.com/o_ob/n/n36a2760c6145
 
 == 2023年4月 - フランス出張の準備をしながら「尊い業務外開発」が進む
 
@@ -383,6 +483,8 @@ AI Fusion技術により、美しい歩行モーションと融合させ、上�
 
 //image[shirai-img/技術書典14_50][その手があったかREALITY、エイプリルフールにハンドトラッキング機能公開。指にかけるメタバース研究開発の歴史を振り返る]{ 
 //}
+
+https://note.com/o_ob/n/n81a0cc5cde1f
 
 ごくごくまれにお仕事の紹介を書きました。
 手が……手が動くようになったんです！！
@@ -394,42 +496,53 @@ AI Fusion技術により、美しい歩行モーションと融合させ、上�
 //image[shirai-img/技術書典14_51][AI爆発時代のクリエイターライフ]{ 
 //}
 
+https://note.com/o_ob/n/naebff99145df
+
 === シュンスケ式プロンプトの極意はとてもカンタンなことだった - Amazon検索QRコード生成サンプル付き (2023-04-03)
 
 //image[shirai-img/技術書典14_52][シュンスケ式プロンプトの極意はとてもカンタンなことだった - Amazon検索QRコード生成サンプル付き]{ 
 //}
 
+https://note.com/o_ob/n/ndca1cdd68a94
+
 === 何があっても全力肯定してくれる彼氏AIを作りました (2023-04-03)
-
-この記事、有料設定なのですが、ものすごく人気でした。
-
 
 //image[shirai-img/技術書典14_53][何があっても全力肯定してくれる彼氏AIを作りました]{ 
 //}
+
+
+https://note.com/o_ob/n/nb2e280ca1309
+
+この記事、有料設定なのですが、ものすごく人気でした。
+どんな話題でも全力肯定して傾聴してくれるGPT実験チャットボット「LuC4」です。この時点で7,000人ぐらいフレンドがいた気がする。
+実験的に作ってみたものですが、非常に人気なのでちゃんとメンテナンスしています。学ぶことが多かった……そのうち記事にするかもしれない。
+
 
 === 「メタバース開発もくもく会」開催します！ #VTC23 (2023-04-04)
 
 //image[shirai-img/技術書典14_54][「メタバース開発もくもく会」開催します！ #VTC23]{ 
 //}
 
-=== ChatGPT選手権で「メタバース研究所のマネジメントプレイヤーが爆速で業務効率化している件」という登壇をしました #尊い業務外活動 (2023-04-05)
+https://note.com/o_ob/n/n0d7f54456697
 
-「尊い業務外活動」です！流行らせていきたい！
+=== ChatGPT選手権で「メタバース研究所のマネジメントプレイヤーが爆速で業務効率化している件」という登壇をしました #尊い業務外活動 (2023-04-05)
 
 
 //image[shirai-img/技術書典14_55][ChatGPT選手権で「メタバース研究所のマネジメントプレイヤーが爆速で業務効率化している件」という登壇をしました #尊い業務外活動]{ 
 //}
 
+https://note.com/o_ob/n/n97b0c34d9d01
+
+「尊い業務外活動」です！流行らせていきたい！
+
+
 === まだお花見できそうだね (2023-04-06)
-
-
-GPT実験チャットボット「LuC4」です。この時点で7,000人ぐらいフレンドがいた気がする。
-実験的に作ってみたものですが、非常に人気なのでちゃんとメンテナンスしています。学ぶことが多かった……そのうち記事にするかもしれない。
 
 
 //image[shirai-img/技術書典14_56][まだお花見できそうだね]{ 
 //}
 
+https://note.com/o_ob/n/n0604f1f67d6e
 
 この期間はフランス「Laval Virtual 2023」で展示をやっていたので主にインスタです。
 
@@ -437,14 +550,16 @@ https://www.instagram.com/virtual_akihiko/
 
 === 博士課程の最中に子供産みました (2023-04-18)
 
+//image[shirai-img/技術書典14_57][博士課程の最中に子供産みました]{ 
+//}
+
+https://note.com/o_ob/n/n70ed3e0b231f
+
 なんかTwitterのタイムラインで「博士課程の最中に子供を産むのはケシカラン」という風潮を見てしまったんですよね……。
 元投稿は消えてしまったのですが、しっかり書かせていただきました。多くの人から共感をいただきました。
 
 後日、息子（本人）から軽く感想もらった……。そういうことなんですよね……。
 社会のパタニティハラスメントは、すぐに社会に跳ね返ってきますよ～。
-
-//image[shirai-img/技術書典14_57][博士課程の最中に子供産みました]{ 
-//}
 
 
 === デジタルハリウッド大学大学院の新ラボプロジェクト「Creative AI Lab」 (2023-04-22)
@@ -452,16 +567,26 @@ https://www.instagram.com/virtual_akihiko/
 //image[shirai-img/技術書典14_58][デジタルハリウッド大学大学院の新ラボプロジェクト「Creative AI Lab」]{ 
 //}
 
+https://note.com/o_ob/n/na119073b7870
+
+ちゃんと先生らしい活動もしています。
+
 === AIサービス開発において開発しながら大事なことを書いていたらこんな時間に… (2023-04-23)
 
 //image[shirai-img/技術書典14_59][AIサービス開発において開発しながら大事なことを書いていたらこんな時間に…]{ 
 //}
 
+https://note.com/o_ob/n/n574c1a59ffff
+
+とりあえずカバーイラストだけでも…と公開したエントリー。たまにはこういう日もあります。
 
 === メタバース研究者が考える生成AI時代のスピード感　#140秒でわかるメタバース開発TIPS  (2023-04-26)
 
 //image[shirai-img/技術書典14_60][メタバース研究者が考える生成AI時代のスピード感　#140秒でわかるメタバース開発TIPS ]{ 
 //}
+
+https://note.com/o_ob/n/n941bacac13c3
+
 
 === VRのタクソノミーに関する研究まとめ (2023-04-27)
 
@@ -470,22 +595,31 @@ https://www.instagram.com/virtual_akihiko/
 //image[shirai-img/技術書典14_61][VRのタクソノミーに関する研究まとめ]{ 
 //}
 
+https://note.com/o_ob/n/n953b8bbe7b19
+
 
 === StabilityAIが東工大で講演を行っていたので聴講した（ぼくの感想） (2023-04-30)
 
 //image[shirai-img/技術書典14_62][StabilityAIが東工大で講演を行っていたので聴講した（ぼくの感想）]{ 
 //}
 
+https://note.com/o_ob/n/nd88747fc0c19
+
+これはちゃんと書いてたんだけど、公開許可が出なかったんだよねー。
 
 === 生成AI時代のカンブリア爆発を生き抜くために…連休は性癖を走らせるまえに(謝辞と補足) (2023-05-02)
 
 //image[shirai-img/技術書典14_63][生成AI時代のカンブリア爆発を生き抜くために…連休は性癖を走らせるまえに(謝辞と補足)]{ 
 //}
 
+https://note.com/o_ob/n/n467c2fb3bf9a
+
 === 「生成AI利用のガイドライン」にモヤモヤしたクリエイター側のガードライン (2023-05-03)
 
 //image[shirai-img/技術書典14_64][「生成AI利用のガイドライン」にモヤモヤしたクリエイター側のガードライン]{ 
 //}
+
+https://note.com/o_ob/n/n8b2f8eccf218
 
 その後、柿沼弁護士から「フィードバックさせていただきますね！」というDMをいただきました。書いてよかった。
 
@@ -494,9 +628,17 @@ https://www.instagram.com/virtual_akihiko/
 //image[shirai-img/技術書典14_65][OpenAIの裏APIを叩いて利用状況を取得する]{ 
 //}
 
+https://note.com/o_ob/n/n07a27ca94475
+
 なんかもうこれだけで技術書が書けるネタがありますね……。
 あとは趣味でStripeAPIを叩いてみたりもしています。
 
+#@# === Poeで愛の詩をよむフランス人の多言語彼氏botを作りました (2023-05-08)
+#@# //image[shirai-img/2023-05-08][Poeで愛の詩をよむフランス人の多言語彼氏botを作りました]{ //}
+#@# https://note.com/o_ob/n/n92db5592535e
+#@# === NVIDIAの生成AI研究 #SIGGRAPH2023 (2023-05-09)
+#@# //image[shirai-img/2023-05-09][NVIDIAの生成AI研究 #SIGGRAPH2023]{ //}
+#@# https://note.com/o_ob/n/n9df0f8da04ac
 
 == 振り返り「尊い業務外活動」！
 
@@ -617,8 +759,10 @@ function insertImageToSheet() {
 
 プロンプトは毎日のnoteで公開してたりします。今回はこんな感じです。
 //listnum[NijiJourney][NijiJourneyV5でのプロンプト]{
-two girls in symmetry, a pink bud hair girl watching at camera, a cyan hair hacker exaggrated cute girl on the right, 
-red half rig glasses, crawling to the keyboard, innocent eyes, curvey, attractive, neon colors, ultra realistic,
+two girls in symmetry, a pink bud hair girl watching at camera,
+a cyan hair hacker exaggrated cute girl on the right, 
+red half rig glasses, crawling to the keyboard, innocent eyes, 
+curvey, attractive, neon colors, ultra realistic,
 highest quality --niji 5 --style expressive --ar 16:9
 //}
 
