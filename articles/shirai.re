@@ -615,9 +615,10 @@ function insertImageToSheet() {
 //image[shirai-img/slideindex][こうして生成されたPNG画像たち。都合よくリネームする方法がわからないのでこれはスプレッドシート側でどうにかするか……]{ 
 //}
 
-//image[shirai-img/nijijourney]今回の表紙（のメイキング）。プロンプトは毎日のnoteで公開してたりします]{ 
+//image[shirai-img/NijiJourney4]今回の表紙（のメイキング）]{ 
 //}
 
+プロンプトは毎日のnoteで公開してたりします。今回はこんな感じです。
 //listnum[NijiJourney][NijiJourneyV5でのプロンプト]{
 two girls in symmetry, a pink bud hair girl watching at camera, a cyan hair hacker exaggrated cute girl on the right, red half rig glasses, crawling to the keyboard, innocent eyes, curvey, attractive, neon colors, ultra realistic, highest quality --niji 5 --style expressive --ar 16:9
 //}
