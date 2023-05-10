@@ -1,8 +1,6 @@
 
 = メタバース開拓日誌こぼれ話
 
-== 白井暁彦（作家/Hacker）として毎日何かしら書いています
-
 白井暁彦（作家/Hacker）として毎日何かしら書いています。
 
 「窓の杜」での連載もあるのですが、やっぱり商業メディアではなくパーソナルメディアでの「業務外執筆は尊いもの」で、数えてみたら今回60本近い原稿がありましたので、この一年の「メタバース開拓」のフロントラインにおける趣味開発をまとめて振り返ってみます。
@@ -615,11 +613,13 @@ function insertImageToSheet() {
 //image[shirai-img/slideindex][こうして生成されたPNG画像たち。都合よくリネームする方法がわからないのでこれはスプレッドシート側でどうにかするか……]{ 
 //}
 
-//indepimage[shirai-img/NijiJourney4.png][今回の表紙（のメイキング）]
+//indepimage[shirai-img/NijiJourney4][今回の表紙（のメイキング）]
 
 プロンプトは毎日のnoteで公開してたりします。今回はこんな感じです。
 //listnum[NijiJourney][NijiJourneyV5でのプロンプト]{
-two girls in symmetry, a pink bud hair girl watching at camera, a cyan hair hacker exaggrated cute girl on the right, red half rig glasses, crawling to the keyboard, innocent eyes, curvey, attractive, neon colors, ultra realistic, highest quality --niji 5 --style expressive --ar 16:9
+two girls in symmetry, a pink bud hair girl watching at camera, a cyan hair hacker exaggrated cute girl on the right, 
+red half rig glasses, crawling to the keyboard, innocent eyes, curvey, attractive, neon colors, ultra realistic,
+highest quality --niji 5 --style expressive --ar 16:9
 //}
 
 //image[shirai-img/cover][今回の表紙（の素材）]{ 
