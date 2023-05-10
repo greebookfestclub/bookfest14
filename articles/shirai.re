@@ -615,8 +615,7 @@ function insertImageToSheet() {
 //image[shirai-img/slideindex][こうして生成されたPNG画像たち。都合よくリネームする方法がわからないのでこれはスプレッドシート側でどうにかするか……]{ 
 //}
 
-//image[shirai-img/NijiJourney4]今回の表紙（のメイキング）]{ 
-//}
+//indepimage[shirai-img/NijiJourney4.png]今回の表紙（のメイキング）]
 
 プロンプトは毎日のnoteで公開してたりします。今回はこんな感じです。
 //listnum[NijiJourney][NijiJourneyV5でのプロンプト]{
