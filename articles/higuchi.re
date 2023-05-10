@@ -148,15 +148,127 @@ Run Allすると、クロールして取得した情報から学習し、質問�
 
 //indepimage[higuchi_bot3][推論]
 
+=== 分類
+分類もよくある機械学習タスクです。
+通常は大量のデータを使った学習が必要です。
+ここではopenaiの学習済みのモデルを微調整することにより、少ないデータで分類を行なってみます。
+
+まず、元となるデータを作成します。
+今回は、施設名からその施設が宿泊施設か観光施設かを分類してみます。
+
+//indepimage[higuchi_cla1][施設データ]
+
+それをcsvでダウンロードし、Jupiterからアクセスしやすいディレクトリにコピーします。
+
+//cmd{
+cp ~/Downloads/bquxjob_xxxx_xxxx.csv openai-cookbook/examples/data/spot_list.csv
+//}
+
+Jupiterで新しいnoteを開いて、一番上に必要なパッケージのインストールを追加します。
+
+//cmd{
+!pip install openai pandas
+//}
+
+用意したデータを読み込むようにします。
+
+//cmd{
+import pandas as pd
+import openai
+
+openai.organization = os.getenv("OPENAI_ORGANIZATION")
+openai.api_key = os.getenv("OPENAI_API_KEY")
+dataset_path = "data/spot_list.csv"
+df = pd.read_csv(dataset_path)
+df.to_json("spot_list.jsonl", orient='records', lines=True)
+//}
+
+このデータを学習とテストに分けます。
+
+//cmd{
+!env OPENAI_ORGANIZATION="org-xxx" OPENAI_API_KEY="sk-xxx" 
+openai tools fine_tunes.prepare_data -f spot_list.jsonl -q
+//}
+
+次にモデルの微調整を行います。
+以下のコマンドで、微調整が開始されます。
+
+//cmd{
+! env OPENAI_ORGANIZATION="org-xxx" OPENAI_API_KEY="sk-xxx"
+  openai api fine_tunes.create -t "spot_list_prepared_train.jsonl" 
+  -v "spot_list_prepared_valid.jsonl" 
+  --compute_classification_metrics 
+  --classification_positive_class " leisure" -m ada
+//}
+
+このコマンドを打つと、以下のような出力があり、数分で終了します。
+
+//cmd{
+Uploaded file from spot_list_prepared_valid.jsonl: file-xxx
+Created fine-tune: ft-xxx
+Streaming events until fine-tuning is complete...
+
+(Ctrl-C will interrupt the stream, but not cancel the fine-tune)
+[2023-05-09 22:28:42] Created fine-tune: ft-xxx
+
+Stream interrupted (client disconnected).
+To resume the stream, run:
+
+  openai api fine_tunes.follow -i ft-xxx
+//}
+
+出力に書いてあるコマンドを数時間後に打ちます。
+
+//cmd{
+!env OPENAI_ORGANIZATION="org-xxx" OPENAI_API_KEY="sk-xxx" 
+  openai api fine_tunes.follow -i ft-xxx
+//}
+
+すると以下のように微調整されたモデルのIDを取得できます。
+
+//cmd{
+[2023-05-09 22:28:42] Created fine-tune: ft-xxx
+[2023-05-09 22:31:32] Fine-tune costs $0.03
+[2023-05-09 22:31:33] Fine-tune enqueued. Queue number: 27
+[2023-05-10 00:03:51] Fine-tune started
+[2023-05-10 00:07:14] Uploaded model: ada:ft-xxx
+[2023-05-10 00:07:15] Uploaded result file: file-xxx
+[2023-05-10 00:07:15] Fine-tune succeeded
+
+Job complete! Status: succeeded 🎉
+Try out your fine-tuned model:
+
+openai api completions.create -m ada:ft-xxx -p <YOUR_PROMPT>
+//}
+
+サンプルのノートには10分程度かかると書いてありますが、2時間程度かかりました。
+微調整が終わったら施設名を分類してみると、期待通りに分類されました。
+
+//cmd{
+ft_model = 'ada:ft-xxx'
+res = openai.Completion.create(model=ft_model, 
+ prompt='よみうりランド' + '\n\n###\n\n', max_tokens=1, 
+ temperature=0, logprobs=2)
+res['choices'][0]['text']
+
+Output: " leisure"
+//}
+
+== 利用料金
+この記事を書くためJupiter Notebookを使って様々な実験をしましたが、利用料金は200円程度でした。
+
+//indepimage[higuchi_cost][利用料金]
 
 == まとめ
-OpenAI APIを使うことにより、モデルの学習や推論を簡単に行うことができるようになりました。
+OpenAI APIを使うことにより、言語モデルを簡単に行うことができるようになりました。
+Skip-gram登場時から漠然と感じていた、言語モデルを作成する痛みから解放される事となりました。
+
 しかし、全てのML関連業務を置き換えることはできません。
 何を学習させるかを調べる特徴量エンジニアリング、
 学習に必要なデータを集めるデータエンジニアリング、
 学習や推論をプロダクションで安定的に実行させる環境を作るMLOpsなどは引き続き重要です。
 つまり、業務で利用するには使い所を選ぶと思います。
 
-しかし、趣味の開発では大活躍しそうです。
+趣味の開発では大活躍しそうです。
 iPhone登場時にエンジニアが思いつきでアプリを作って公開していた時期と雰囲気が似ているように感じます。
 このビックウェーブに乗って、いろいろ作っていきたいと思います。
