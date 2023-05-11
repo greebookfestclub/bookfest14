@@ -43,7 +43,7 @@ https://note.com/o_ob/n/nc0c6f487161e
 
 
 
-//image[shirai-img/技術書典14_5a][人工知能とともに絵を描くという行為が人類にどんな影響を与えているか(1)]{ 
+//image[shirai-img/技術書典14_5][人工知能とともに絵を描くという行為が人類にどんな影響を与えているか(1)]{ 
 //}
 
 https://note.com/o_ob/n/nbf93a5ec5b25
@@ -633,12 +633,17 @@ https://note.com/o_ob/n/n07a27ca94475
 なんかもうこれだけで技術書が書けるネタがありますね……。
 あとは趣味でStripeAPIを叩いてみたりもしています。
 
-#@# === Poeで愛の詩をよむフランス人の多言語彼氏botを作りました (2023-05-08)
-#@# //image[shirai-img/2023-05-08][Poeで愛の詩をよむフランス人の多言語彼氏botを作りました]{ //}
-#@# https://note.com/o_ob/n/n92db5592535e
-#@# === NVIDIAの生成AI研究 #SIGGRAPH2023 (2023-05-09)
-#@# //image[shirai-img/2023-05-09][NVIDIAの生成AI研究 #SIGGRAPH2023]{ //}
-#@# https://note.com/o_ob/n/n9df0f8da04ac
+=== Poeで愛の詩をよむフランス人の多言語彼氏botを作りました (2023-05-08)
+//image[shirai-img/2023-05-08][Poeで愛の詩をよむフランス人の多言語彼氏botを作りました]{ //}
+https://note.com/o_ob/n/n92db5592535e
+
+PoeというQuoraが運営しているAIサービスがあるのですが、ここで無料ボットが簡単に作れるので例の彼氏プロンプトを改造して多言語で愛の詩を読むフランス人青年ボットを作りました。
+
+=== NVIDIAの生成AI研究 #SIGGRAPH2023 (2023-05-09)
+//image[shirai-img/2023-05-09][NVIDIAの生成AI研究 #SIGGRAPH2023]{ //}
+https://note.com/o_ob/n/n9df0f8da04ac
+
+東工大時代の教え子だった長野光希さん、現在NVIDIAにいるのですがなかなかすごい研究で、2Dの顔画像1枚で3D化、さらに表情制御もしています。
 
 == 振り返り「尊い業務外活動」！
 
