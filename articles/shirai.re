@@ -43,7 +43,7 @@ https://note.com/o_ob/n/nc0c6f487161e
 
 
 
-//image[shirai-img/技術書典14_5][人工知能とともに絵を描くという行為が人類にどんな影響を与えているか(1)]{ 
+//image[shirai-img/技術書典14_5a][人工知能とともに絵を描くという行為が人類にどんな影響を与えているか(1)]{ 
 //}
 
 https://note.com/o_ob/n/nbf93a5ec5b25
@@ -724,10 +724,6 @@ function insertImageToSheet() {
   //スプレッドシートに記載されたURL、カバー画像、QRコードをGoogleSlides化
   let presentation = SlidesApp.getActivePresentation()
   let slides = presentation.getSlides();
-  // QRを左710に移動
-  Logger.log(slides[1].getImages()[0].getLeft().toString());
-  Logger.log(slides[1].getImages()[0].getTop().toString());
-  slides[1].getImages()[0].setLeft(710); //QRを右に寄せたかった
   let ss = SpreadsheetApp.openById("(SpreadsheetのID)").getSheetByName("note記事一覧");
   var range = ss.getRange(2,2,94,4).getValues();
   for (let i=0; i<=94; i++) {
