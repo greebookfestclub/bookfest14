@@ -16,20 +16,20 @@ Macで確認していますが、Windowsでも同様に行うことができる�
 @<img>{higuchi_intro2}のような画面が表示されるので、メールアドレスとパスワードを入力すると確認メールが送信されます。
 確認メール記載のボタンをクリックすれば、登録完了です。ログイン状態となります。
 
-//indepimage[higuchi_intro1][OpenAi開発者トップ]
-//indepimage[higuchi_intro2][OpenAiログイン画面]
+//indepimage[higuchi_intro1][OpenAI開発者トップ]
+//indepimage[higuchi_intro2][OpenAIログイン画面]
 
 === OpenAI API key取得
 ログインすると、@<img>{higuchi_intro3}のように右上にメニューが表示されます。
 "View API Key"をクリックすると、@<img>{higuchi_intro4}のような画面が表示されます。
 ここで"Create New Secret Key"をクリックすると、API Keyが発行されます。
 
-//indepimage[higuchi_intro3][OpenAiメニュー]
-//indepimage[higuchi_intro4][OpenAi API Key管理画面]
+//indepimage[higuchi_intro3][OpenAIメニュー]
+//indepimage[higuchi_intro4][OpenAI API Key管理画面]
 
 左メニューでSettingsを選ぶと、@<img>{higuchi_intro6}のような画面にOrganizationIdが表示されるので、メモしておきます。
 
-//indepimage[higuchi_intro6][OpenAiSettings]
+//indepimage[higuchi_intro6][OpenAISettings]
 
 ここで取得した鍵を以下のように環境変数に設定しておきます。
 
@@ -68,7 +68,7 @@ Anacondaをスタートすると@<img>{higuchi_bot1}のような画面が表示�
 === 類似アイテム推薦
 商品ページに類似商品を掲載しているケースがあります。
 協調フィルタリングを使う実装もありますが、アイテムをvectorにして距離の近いものを表示している実装もあります。
-アイテムの文字情報からvectorを生成するembedding処理をopenai APIを使うことにより、簡単に行うことができます。
+アイテムの文字情報からvectorを生成するembedding処理をOpenAI APIを使うことにより、簡単に行うことができます。
 
 まず、元となるデータを作成します。
 今回は記事情報を利用して、類似記事の生成を目指します。
@@ -111,7 +111,7 @@ Run Allすると、@<img>{higuchi_rec3}のような類似アイテムが表示�
 Webサイトにチャットで質問できるモーダルをたまに見ます。
 Webをクロールして学習し、質問に対して回答するボットを作ります。
 
-Webページからテキストを抜き出し、openai APIのembedding機能を使ってvectorにします。
+Webページからテキストを抜き出し、OpenAI APIのembedding機能を使ってvectorにします。
 質問も同様にvectorにして、コサイン距離が近いテキストを応答します。
 
 Jupiter Notebookで openai-cookbook/apps/web-crawl-q-and-a/web-qa.ipynb を開きます。
@@ -151,7 +151,7 @@ Run Allすると、クロールして取得した情報から学習し、質問�
 === 分類
 分類もよくある機械学習タスクです。
 通常は大量のデータを使った学習が必要です。
-ここではopenaiの学習済みのモデルを微調整することにより、少ないデータで分類を行なってみます。
+ここではOpenAIの学習済みのモデルを微調整することにより、少ないデータで分類を行なってみます。
 
 まず、元となるデータを作成します。
 今回は、施設名からその施設が宿泊施設か観光施設かを分類してみます。
